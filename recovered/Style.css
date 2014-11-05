@@ -1,0 +1,748 @@
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body{
+	background-color: #2c3e50;
+	padding: 0;
+}
+
+#main_container{
+	position: relative;
+	margin: 0 auto;
+	width: 100%;
+	height: 100%;
+	max-width: 1300px;
+	overflow: hidden;
+}
+
+
+
+	#content{
+		width: 90%;
+		max-width: 1280px;
+		height: 100%;
+		margin: 0 auto;
+	}
+
+		header{
+			width: 100%;
+			height: 150px;
+			background-color: #bdc3c7;
+		}
+
+			#logo{
+				display: inline-block;
+				margin: 15px 0 0 10px;
+			}
+
+			#nav{
+				display: block;
+				height: 50px;
+				max-width: 434px;
+				display: block;
+				margin: 0 auto 10px;
+				margin-top:50px;
+				transition: all 0.5s;
+			}
+
+				#nav li{
+					margin: 0 2.5px;
+					padding: 0;
+					width:100px;
+					height:50px;
+					background-color: #2c3e50;
+					line-height: 50px;
+					text-align: center;
+					border-top-right-radius: 5px;
+					border-bottom-left-radius: 5px;
+					display: inline-block;
+					list-style: none;
+					overflow: hidden;
+					float: none;
+					border-top-right-radius: 5px;
+					border-bottom-left-radius: 5px;
+				}
+					#nav .active{
+						background-color: rgba( 41,128,185, 0.7);/*#2980b9*/
+					}
+
+					#nav li a{
+						display: block;
+						width: 100%;
+						height: 100%;
+						text-decoration: none;
+						color: #ecf0f1;
+					}
+
+					#nav #menu{
+						display: none;
+						width: 50px;
+						height: 50px;
+						margin: 0 10px;
+						background-color: #2c3e50;
+						color: #ecf0f1;
+					}
+
+
+			.social_media{
+				float: right;
+				margin: 15px 10px 0 0;
+				text-align: right;
+			}
+				.social_media p{
+					cursor: pointer;
+				}
+				.social_m_icons{
+					margin-top: 80px;
+					display: inline-block;
+				}
+
+					.social_m_icons li{
+						display: inline-block;
+						list-style: none;
+					}
+
+						.facebook_share{
+							width: 121px;
+							margin-right: 5px;
+						}
+						.twitter_share{
+							width: 76px;
+						}
+
+		#body{
+			width: 85%;
+			height: 100%;
+			margin: 20px auto;
+			clear: both;
+		}
+
+			.ads{
+				width: 120px;
+				height: 600px;
+				background-image: url(../Images/ad.png);
+			}
+
+			#content_container{
+				display: block;
+				width: 100%;
+				min-height: 600px;
+				margin: 20px 0;
+				background-color: white;
+				padding: 10px 0;
+			}
+
+				#content_container h1{
+					font-size: 25px;
+					width: 98%;
+					margin: 0 auto;
+				}
+
+				/*Index.php*/
+				#content_container #main{
+					width: 100%;
+					height: auto;
+				}
+					#content_container #main #featured{
+						width: 98%;
+						height: 410px;
+						margin: 10px auto 0;
+						overflow-x:auto;
+					}
+
+						#content_container #main #featured li{
+							width: 100%;
+							height: 90px;
+							margin: 10px 0;
+							background-color: #2c3e50;
+							list-style: none;
+							border-top-right-radius: 5px;
+							border-bottom-left-radius: 5px;
+							padding: 5px;
+						}
+
+							#content_container #main #featured li section{
+								position: relative;
+								height: 80px;
+								background-color: #bdc3c7;
+								border-top-right-radius: 5px;
+								border-bottom-left-radius: 5px;
+								overflow: hidden;
+							}
+
+								#content_container #main #featured li section img{
+									vertical-align: top;
+									height: 45px;
+									width: 45px;
+									margin: 17.5px 10px;
+								}
+
+								#content_container #main #featured li section .f_count{
+									display: inline-block;
+									height: 100%;
+									width: auto;
+									vertical-align: top;
+									text-align: center;
+									margin: 0 10px;
+								}
+
+									#content_container #main #featured li section .f_count h3{
+										padding-top: 17.5px;
+									}
+
+								#content_container #main #featured li section .ff_company_logo{
+									width: 60px;
+									height: 60px;
+								}
+
+								#content_container #main #featured li section .ff_company_info{
+									position: absolute;
+									left: 40%;
+									top:0;
+									text-align: center;
+								}
+
+									#content_container #main #featured li section .ff_company_info h2{
+										font-size: 32px;
+										margin-top: 9.5px;
+
+									}
+
+								#content_container #main #featured li section .f_filter_icons{
+									position: absolute;
+									top:5.5px;
+									right: 10px;
+								}
+
+									#content_container #main #featured li section .f_filter_icons img{
+										height: 25px;
+										width: 25px;
+										margin: 5px;
+									}
+
+
+					#content_container #main #map-canvas {
+						width: 100%;
+						height: 300px;
+						margin: 0 auto;
+					}
+
+					#content_container #main #filters {
+						position: relative;
+						width: 100%;
+						height: 75px;
+						margin: 0 auto 10px;
+						background-color: #2980b9;
+						color: white;
+					}
+						#content_container #main #filters #default{
+							position: absolute;
+							left: 0;
+							top: 0;
+							padding: 5px;
+						}
+
+							#lbl1, #lbl2{
+								margin-left: 5px;
+							}
+
+						#content_container #main #filters #custom{
+							position: absolute;
+							right: 0;
+							top: 0;
+							padding: 5px;
+						}
+
+							.lbl{
+								margin-right: 5px;
+							}
+
+					#content_container #main #fields{
+						width: 98%;
+						height: auto;
+						margin: 0 auto;
+					}
+
+						#content_container #main #fields li{
+							width: 100%;
+							height: 90px;
+							margin: 10px 0;
+							background-color: #2c3e50;
+							list-style: none;
+							border-top-right-radius: 5px;
+							border-bottom-left-radius: 5px;
+							padding: 5px;
+						}
+							#content_container #main #fields li section{
+								position: relative;
+								height: 80px;
+								background-color: #bdc3c7;
+								border-top-right-radius: 5px;
+								border-bottom-left-radius: 5px;
+								overflow: hidden;
+							}
+
+								#content_container #main #fields li section .f_count{
+									display: inline-block;
+									height: 100%;
+									width: auto;
+									vertical-align: top;
+									text-align: center;
+									margin: 0 10px;
+								}
+
+									#content_container #main #fields li section .f_count h3{
+										padding-top: 17.5px;
+									}
+
+								#content_container #main #fields li section .f_company_info{
+									width:100%;
+									height: auto;
+									display: block;
+									background: transparent;
+									text-align: center;
+									margin-top: -58.5px;
+								}
+
+									#content_container #main #fields li section .f_company_info h2{
+										font-size: 32px;
+									}
+
+								#content_container #main #fields li section .f_filter_icons{
+									position: absolute;
+									top:0;
+									right: 10px;
+									padding-top: 2.5px;
+								}
+
+									#content_container #main #fields li section .f_filter_icons img{
+										height: 25px;
+										width: 25px;
+										margin: 5px;
+									}
+
+				/*Events.php*/
+				#content_container #events_list{
+					width: 98%;
+					margin: 0 auto;
+				}
+					#content_container #events_list li{
+						width: 100%;
+						height: auto;
+						margin: 20px 0;
+						background-color: #2c3e50;
+						list-style: none;
+						border-top-right-radius: 5px;
+						border-bottom-left-radius: 5px;
+						padding: 5px;
+						text-align: left;
+					}
+						#content_container #events_list li section{
+							position: relative;
+							height: 100%;
+							background-color: #bdc3c7;
+							border-top-right-radius: 5px;
+							border-bottom-left-radius: 5px;
+							overflow: hidden;
+							padding: 5px;
+						}
+
+							#content_container #events_list li section .info{
+								display: inline-block;
+								width: 49%;
+								vertical-align: top;
+							}
+							#content_container #events_list li section .banner_img{
+								display: inline-block;
+								width: 49%;
+							}
+
+							#content_container #events_list li section h3{
+								text-align: left;
+								padding: 5px 20px;
+							}
+							#content_container #events_list li section h4{
+								padding: 5px 20px;
+							}
+							#content_container #events_list li section img{
+								display: block;
+								width: 90%;
+								height: auto;
+								margin:0 auto;
+							}
+
+				/*Fields.php*/
+				#content_container #fields_list{
+					width: 98%;
+					margin: 0 auto;
+				}
+
+					#content_container #fields_list li{
+						width: 100%;
+						height: auto;
+						margin: 20px 0;
+						background-color: #2c3e50;
+						list-style: none;
+						border-top-right-radius: 5px;
+						border-bottom-left-radius: 5px;
+						padding: 5px;
+						text-align: left;
+					}
+
+						#content_container #fields_list li section{
+							position: relative;
+							height: 100%;
+							background-color: #bdc3c7;
+							border-top-right-radius: 5px;
+							border-bottom-left-radius: 5px;
+							overflow: hidden;
+							padding: 5px;
+						}
+
+				/*ContactUs.php*/
+				#content_container #about_container{
+					width: 98%;
+					margin: 20px auto;
+					background-color: #2c3e50;
+					border-top-right-radius: 5px;
+					border-bottom-left-radius: 5px;
+					padding: 5px;
+				}
+					#content_container #about{
+						width: 100%;
+						height: auto;
+						background-color: #bdc3c7;
+						border-top-right-radius: 5px;
+						border-bottom-left-radius: 5px;
+						padding: 10px;
+					}
+						#content_container #about #about_info{
+							width: 100%;
+							height: auto;
+							display: block;
+							margin: 10px 0;
+							padding-bottom: 60px;
+						}
+
+						#content_container #about #about_pic{
+							float: right;
+							margin-top: -56px;
+						}
+
+				#content_container #contact_container{
+					width: 98%;
+					margin: 20px auto;
+					background-color: #2c3e50;
+					border-top-right-radius: 5px;
+					border-bottom-left-radius: 5px;
+					padding: 5px;
+				}
+					#content_container #contact{
+						width: 100%;
+						height: auto;
+						background-color: #bdc3c7;
+						border-top-right-radius: 5px;
+						border-bottom-left-radius: 5px;
+						padding: 10px;
+					}
+						#contact_container #contact form{
+							width:450px;
+							margin: 0 auto;
+						}
+
+						#content_container #contact label{
+							display: block;
+							position: relative;
+							margin:20px;
+							font-size: 16px;
+							line-height: 35px;
+						}
+
+							#content_container #contact label input{
+								position: absolute;
+								top:0;
+								left:120px;
+								width: 300px;
+								height: 35px;
+							}
+
+							#content_container #contact label #comment{
+								height: 200px;
+							}
+
+							#content_container #contact #comment_submit{
+								margin: 160px 0 0 385px;
+							}
+
+		footer{
+			width: 100%;
+			height:50px;
+			background-color: #bdc3c7;
+
+		}
+
+			h3{
+				padding-top: 20px;
+				text-align: center;
+			}
+
+			.social_footer{
+				display: inline-block;
+				margin-top: -25px;
+			}
+
+				.social_footer li{
+					display: inline-block;
+					list-style: none;
+				}
+
+#l_r_container{
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.7);
+}
+	#l_r_container #l_r_content_border{
+		width: 610px;
+		height: 260px;
+		margin: 20% auto;
+		background-color: rgba(44, 62, 80, 1);/*#2c3e50*/
+		border-top-right-radius: 5px;
+		border-bottom-left-radius: 5px;
+		padding: 5px;
+	}
+		#l_r_container #l_r_content_border #l_r_content{
+			width:600px;
+			height: 250px;
+			margin: 0 auto;
+			background-color: rgba(189, 195, 199, 1);/*#bdc3c7*/
+			border-top-right-radius: 5px;
+			border-bottom-left-radius: 5px;
+			padding: 10px;
+		}
+
+		#l_r_container #l_r_content label{
+			position: relative;
+			display: block;
+			margin: 10px 0;
+		}
+			#l_r_container #l_r_content label input{
+				position: absolute;
+				top:0;
+				left:120px;
+				display: line-block;
+			}
+		#l_r_container #l_r_content button{
+			display: line-block;
+			margin-left: 10px;
+		}
+		#l_r_container #l_r_content #close_l_r{
+			width: 100%;
+			display: block;
+			text-align: right;
+			padding: 10px;
+			cursor: pointer;
+		}
+		#l_r_container #l_r_content #login_container, #l_r_container #l_r_content #register_container{
+			float: left;
+			width: 50%;
+			margin-top: 10px;
+			padding: 10px;
+			height: auto;
+			overflow: hidden;
+		}
+
+		#l_r_container #l_r_content #register_container{
+			border-left:1px solid black;
+		}
+
+/*Media Queries*/
+@media screen and (min-width:1111px){
+	#left_ad, #right_ad{
+		position: absolute;
+		top:170px;
+	}
+	#left_ad{
+		left: 10px;
+	}
+	#right_ad{
+		right: 10px;
+	}
+}
+@media screen and (min-width:971px) and (max-width: 1110px) {
+	#left_ad,#right_ad{
+		margin: 0 auto;
+		width: 600px;
+		height: 120px;
+		background-image: url(../Images/ad-h.png);
+	}
+	#body{
+		width: 100%;
+	}
+	#content_container{
+		width: 100%;
+		min-height: 800px;
+	}
+}
+
+@media screen and (min-width:701px) and (max-width: 970px) {
+	#left_ad, #right_ad{
+		margin: 0 auto;
+		width: 600px;
+		height: 120px;
+		background-size: contain;
+		background-image: url(../Images/ad-h.png);
+	}
+	#body, #content{
+		width: 100%;
+		min-width: 545px;
+	}
+
+	#content_container{
+		width: 100%;
+		min-height: 800px;
+	}
+	#main_container{
+		width: 100%;
+	}
+	#nav{
+		position: absolute;
+		left: 10px;
+		top:29px;
+		background-color: white;
+		height: 70px;/* 355px */
+		width: 70px;/* 120px */
+		padding-top: 10px;
+		border-top-right-radius: 5px;
+		border-bottom-left-radius: 5px;
+		overflow: hidden;
+		z-index: 1000;
+	}
+	#nav li{
+		position: relative;
+		display: block;
+		margin: 5px 10px;
+		border-radius: 0;
+		border-top-right-radius: 5px;
+		border-bottom-left-radius: 5px;
+		box-shadow: none;
+	}
+
+	#nav #menu{
+		display: block;
+		margin-bottom: 10px;
+		cursor: pointer;
+	}
+}
+
+@media screen and (min-width:545px) and (max-width: 700px) {
+	#left_ad, #right_ad{
+		width: 100%;
+		height: 120px;
+		background-size: contain;
+		background-image: url(../Images/ad-h.png);
+	}
+	#body, #content{
+		width: 100%;
+		min-width: 545px;
+	}
+
+	#content_container{
+		width: 100%;
+		min-height: 800px;
+	}
+	#main_container{
+		width: 100%;
+	}
+	#nav{
+		position: absolute;
+		left: 10px;
+		top:29px;
+		background-color: white;
+		height: 70px;/* 355px */
+		width: 70px;/* 120px */
+		padding-top: 10px;
+		border-top-right-radius: 5px;
+		border-bottom-left-radius: 5px;
+		overflow: hidden;
+		z-index: 1000;
+	}
+	#nav li{
+		position: relative;
+		display: block;
+		margin: 5px 10px;
+		border-radius: 0;
+		border-top-right-radius: 5px;
+		border-bottom-left-radius: 5px;
+		box-shadow: none;
+	}
+
+	#nav #menu{
+		display: block;
+		margin-bottom: 10px;
+		cursor: pointer;
+	}
+
+}
+
+@media screen and (max-width: 544px) {
+	#left_ad, #right_ad{
+		width: 100%;
+		height: 120px;
+		background-size: contain;
+		background-image: url(../Images/ad-h.png);
+	}
+	#body, #content{
+		width: 480px;
+	}
+
+	#content_container{
+		width: 100%;
+		min-height: 800px;
+	}
+
+	#main_container{
+		width: 480px;
+	}
+
+	#nav{
+		position: absolute;
+		left: 10px;
+		top:29px;
+		background-color: white;
+		height: 70px;/* 355px */
+		width: 70px;/* 120px */
+		padding-top: 10px;
+		border-top-right-radius: 5px;
+		border-bottom-left-radius: 5px;
+		overflow: hidden;
+		z-index: 1000;
+	}
+	#nav li{
+		position: relative;
+		display: block;
+		margin: 5px 10px;
+		border-radius: 0;
+		border-top-right-radius: 5px;
+		border-bottom-left-radius: 5px;
+		box-shadow: none;
+	}
+
+	#nav #menu{
+		display: block;
+		margin-bottom: 10px;
+		cursor: pointer;
+	}
+	#contact_container #contact form{
+		width:450px;
+		margin: 0 0 0 -10px;
+	}
+}
