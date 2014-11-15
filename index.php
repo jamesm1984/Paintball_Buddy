@@ -22,7 +22,6 @@
 						<img src="">
 						<img src="">
 						<img src="">
-						<br>
 						<img src="">
 						<img src="">
 						<img src="">
@@ -49,7 +48,6 @@
 						<img src="">
 						<img src="">
 						<img src="">
-						<br>
 						<img src="">
 						<img src="">
 						<img src="">
@@ -76,7 +74,6 @@
 						<img src="">
 						<img src="">
 						<img src="">
-						<br>
 						<img src="">
 						<img src="">
 						<img src="">
@@ -103,7 +100,6 @@
 						<img src="">
 						<img src="">
 						<img src="">
-						<br>
 						<img src="">
 						<img src="">
 						<img src="">
@@ -144,6 +140,7 @@
 		<ul id="fields">
 			<li id="f_1">
 				<section>
+					<img id="f_pin_1" src="">
 					<section class="f_count">
 						<h3>Current Players</h3>
 						<h2 id="f_count_1">0</h2>
@@ -157,7 +154,6 @@
 						<img src="">
 						<img src="">
 						<img src="">
-						<br>
 						<img src="">
 						<img src="">
 						<img src="">
@@ -168,6 +164,7 @@
 			</li>
 			<li id="f_2">
 				<section>
+					<img id="f_pin_2" src="">
 					<section class="f_count">
 						<h3>Current Players</h3>
 						<h2 id="f_count_2">0</h2>
@@ -181,7 +178,6 @@
 						<img src="">
 						<img src="">
 						<img src="">
-						<br>
 						<img src="">
 						<img src="">
 						<img src="">
@@ -192,6 +188,7 @@
 			</li>
 			<li id="f_3">
 				<section>
+					<img id="f_pin_3" src="">
 					<section class="f_count">
 						<h3>Current Players</h3>
 						<h2 id="f_count_3">0</h2>
@@ -205,7 +202,6 @@
 						<img src="">
 						<img src="">
 						<img src="">
-						<br>
 						<img src="">
 						<img src="">
 						<img src="">
@@ -216,6 +212,7 @@
 			</li>
 			<li id="f_4">
 				<section>
+					<img id="f_pin_4" src="">
 					<section class="f_count">
 						<h3>Current Players</h3>
 						<h2 id="f_count_4">0</h2>
@@ -229,7 +226,6 @@
 						<img src="">
 						<img src="">
 						<img src="">
-						<br>
 						<img src="">
 						<img src="">
 						<img src="">
@@ -240,6 +236,7 @@
 			</li>
 			<li id="f_5">
 				<section>
+					<img id="f_pin_5" src="">
 					<section class="f_count">
 						<h3>Current Players</h3>
 						<h2 id="f_count_5">0</h2>
@@ -253,7 +250,6 @@
 						<img src="">
 						<img src="">
 						<img src="">
-						<br>
 						<img src="">
 						<img src="">
 						<img src="">
@@ -268,5 +264,6 @@
 <?php include 'ad_right.php';?>
 <?php include 'footer.php';?>
 <?php include 'loginRegister.php';?>
+<?php include 'company.php';?>
 	</body>
 </html>

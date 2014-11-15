@@ -28,14 +28,14 @@
 		$email = $_POST['email'];
 		$password = $_POST['password'];
 
-		$email = stripslashes($email);
-		$password = stripslashes($password);
-		$email = mysql_real_escape_string($email);
-		$password = mysql_real_escape_string($password);
+		// $email = stripslashes($email);
+		// $password = stripslashes($password);
+		// $email = mysql_real_escape_string($email);
+		// $password = mysql_real_escape_string($password);
 
 
 		//3.1.2 Checking the values are existing in the database or not
-		$query = "SELECT * FROM `user` WHERE email='$email' and password='$password'";
+		$query = "SELECT * FROM user WHERE email='$email' and password='$password'";
 		echo "test " . $query;
 		$result = mysql_query($query);
 		echo "test " . $result;

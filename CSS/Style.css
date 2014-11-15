@@ -44,13 +44,13 @@ body{
 				display: block;
 				height: 50px;
 				max-width: 434px;
-				display: block;
-				margin: 0 auto 10px;
-				margin-top:50px;
+				margin: 50px auto 10px;
 				transition: all 0.5s;
+				z-index: 1;
 			}
 
 				#nav li{
+					clear: both;
 					margin: 0 2.5px;
 					padding: 0;
 					width:100px;
@@ -157,18 +157,18 @@ body{
 
 						#content_container #main #featured li{
 							width: 100%;
-							height: 90px;
+							height: 92px;
 							margin: 10px 0;
 							background-color: #2c3e50;
 							list-style: none;
 							border-top-right-radius: 5px;
 							border-bottom-left-radius: 5px;
-							padding: 5px;
+							padding: 2px;
 						}
 
 							#content_container #main #featured li section{
 								position: relative;
-								height: 80px;
+								height: 88px;
 								background-color: #bdc3c7;
 								border-top-right-radius: 5px;
 								border-bottom-left-radius: 5px;
@@ -218,6 +218,7 @@ body{
 									position: absolute;
 									top:5.5px;
 									right: 10px;
+									width:195px;
 								}
 
 									#content_container #main #featured li section .f_filter_icons img{
@@ -271,22 +272,29 @@ body{
 
 						#content_container #main #fields li{
 							width: 100%;
-							height: 90px;
+							height: 92px;
 							margin: 10px 0;
 							background-color: #2c3e50;
 							list-style: none;
 							border-top-right-radius: 5px;
 							border-bottom-left-radius: 5px;
-							padding: 5px;
+							padding: 2px;
 						}
 							#content_container #main #fields li section{
 								position: relative;
-								height: 80px;
+								height: 88px;
 								background-color: #bdc3c7;
 								border-top-right-radius: 5px;
 								border-bottom-left-radius: 5px;
 								overflow: hidden;
 							}
+
+								#content_container #main #fields li section img{
+									vertical-align: top;
+									height: 45px;
+									width: 45px;
+									margin: 17.5px 10px;
+								}
 
 								#content_container #main #fields li section .f_count{
 									display: inline-block;
@@ -319,6 +327,7 @@ body{
 									top:0;
 									right: 10px;
 									padding-top: 2.5px;
+									width:195px;
 								}
 
 									#content_container #main #fields li section .f_filter_icons img{
@@ -340,7 +349,7 @@ body{
 						list-style: none;
 						border-top-right-radius: 5px;
 						border-bottom-left-radius: 5px;
-						padding: 5px;
+						padding: 2px;
 						text-align: left;
 					}
 						#content_container #events_list li section{
@@ -370,11 +379,13 @@ body{
 							#content_container #events_list li section h4{
 								padding: 5px 20px;
 							}
-							#content_container #events_list li section img{
-								display: block;
-								width: 90%;
-								height: auto;
-								margin:0 auto;
+
+							#content_container #events_list li section .time_to{
+								float: right;
+								margin-top: -40px;
+								font-size: 26px;
+								font-weight: bold;
+								background: transparent;
 							}
 
 				/*Fields.php*/
@@ -385,13 +396,13 @@ body{
 
 					#content_container #fields_list li{
 						width: 100%;
-						height: auto;
+						height: 100px;
 						margin: 20px 0;
 						background-color: #2c3e50;
 						list-style: none;
 						border-top-right-radius: 5px;
 						border-bottom-left-radius: 5px;
-						padding: 5px;
+						padding: 2px;
 						text-align: left;
 					}
 
@@ -405,6 +416,43 @@ body{
 							padding: 5px;
 						}
 
+							#content_container #fields_list li section .fl_company_logo{
+								display: inline-block;
+								height: 85px;
+								width: 85px;
+							}
+
+							#content_container #fields_list li section .fl_count{
+									display: inline-block;
+									height: 100%;
+									width: auto;
+									vertical-align: top;
+									text-align: center;
+									margin: 0 10px;
+								}
+
+									#content_container #fields_list li section .fl_count h3{
+										padding-top: 17.5px;
+									}
+
+							#content_container #fields_list li section .fl_company_info{
+								display: inline-block;
+								vertical-align: top;
+								padding-top: 30px;
+							}
+							#content_container #fields_list li section .fl_filter_icons{
+								display: inline-block;
+								float: right;
+							}
+
+								#content_container #fields_list li section .fl_filter_icons img{
+									display: inline-block;
+									float: right;
+									height: 25px;
+									width: 25px;
+									margin: 5px;
+								}
+
 				/*ContactUs.php*/
 				#content_container #about_container{
 					width: 98%;
@@ -412,7 +460,7 @@ body{
 					background-color: #2c3e50;
 					border-top-right-radius: 5px;
 					border-bottom-left-radius: 5px;
-					padding: 5px;
+					padding: 2px;
 				}
 					#content_container #about{
 						width: 100%;
@@ -446,7 +494,7 @@ body{
 					background-color: #2c3e50;
 					border-top-right-radius: 5px;
 					border-bottom-left-radius: 5px;
-					padding: 5px;
+					padding: 2px;
 				}
 					#content_container #contact{
 						width: 100%;
@@ -507,6 +555,125 @@ body{
 					list-style: none;
 				}
 
+#c_container{
+	display: none;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0,0,0,0.7);
+}
+	#c_content_border{
+		width: 604px;
+		height: 304px;
+		margin: 10% auto;
+		background-color: rgba(44, 62, 80, 1);/*#2c3e50*/
+		border-top-right-radius: 5px;
+		border-bottom-left-radius: 5px;
+		padding: 2px;
+	}
+		#c_content_border #c_content{
+			width:600px;
+			height: 300px;
+			margin: 0 auto;
+			background-color: rgba(189, 195, 199, 1);/*#bdc3c7*/
+			border-top-right-radius: 5px;
+			border-bottom-left-radius: 5px;
+			padding: 10px;
+		}
+			#c_logo_container{
+				display: inline-block;
+				width:200px;
+				height:auto;
+			}
+
+				#c_logo_container img{
+					width:120px;
+					height: 120px;
+					display: block;
+					margin: 0 auto;
+				}
+				#c_logo_container .c_count{
+					width: 100%;
+					height: auto;
+					width: auto;
+					vertical-align: top;
+					text-align: center;
+					clear: both;
+					margin: 0 auto;
+				}
+			#company_info{
+				display: inline-block;
+				width:370px;
+				height: auto;
+				vertical-align: top;
+			}
+				#company_info h3{
+					text-align: left;
+					padding: 0;
+					margin-left: 10px;
+				}
+			#c_pricing{
+				float: right;
+				width:370px;
+				height: auto;
+				margin: -60px 5px 0 0;
+			}
+
+				#r_a_pricing{
+					display: inline-block;
+					width: 50%;
+					float: left;
+					height:auto;
+				}
+					#r_a_pricing span{
+						margin: 10px 5px;
+						font-weight: bold;
+					}
+					#r_a_pricing li{
+						list-style: none;
+					}
+						#r_a_pricing li span{
+							font-weight: normal;
+							margin-left:10px;
+						}
+						#r_a_pricing li p{
+							display: inline-block;
+						}
+						#r_a_pricing li p:first-child{
+							margin-left:15px;
+						}
+
+				#o_a_pricing{
+					display: inline-block;
+					width: 50%;
+					float: left;
+					height:auto;
+					vertical-align: top;
+				}
+					#o_a_pricing span{
+						margin: 10px 5px;
+						font-weight: bold;
+					}
+					#o_a_pricing li{
+						list-style: none;
+					}
+						#o_a_pricing li span{
+							font-weight: normal;
+							margin-left:10px;
+						}
+						#o_a_pricing li p{
+							display: inline-block;
+						}
+						#o_a_pricing li p:first-child{
+							margin-left:15px;
+						}
+			#c_social_media{
+				width: 200px;
+				margin-top: 40px;
+			}
+
 #l_r_container{
 	display: none;
 	position: fixed;
@@ -516,16 +683,16 @@ body{
 	height: 100%;
 	background-color: rgba(0,0,0,0.7);
 }
-	#l_r_container #l_r_content_border{
+	#l_r_content_border{
 		width: 610px;
 		height: 260px;
-		margin: 20% auto;
+		margin: 10% auto;
 		background-color: rgba(44, 62, 80, 1);/*#2c3e50*/
 		border-top-right-radius: 5px;
 		border-bottom-left-radius: 5px;
 		padding: 5px;
 	}
-		#l_r_container #l_r_content_border #l_r_content{
+		#l_r_content_border #l_r_content{
 			width:600px;
 			height: 250px;
 			margin: 0 auto;
@@ -535,40 +702,33 @@ body{
 			padding: 10px;
 		}
 
-		#l_r_container #l_r_content label{
-			position: relative;
-			display: block;
-			margin: 10px 0;
-		}
-			#l_r_container #l_r_content label input{
-				position: absolute;
-				top:0;
-				left:120px;
-				display: line-block;
+			#l_r_content label{
+				position: relative;
+				display: block;
+				margin: 10px 0;
 			}
-		#l_r_container #l_r_content button{
-			display: line-block;
-			margin-left: 10px;
-		}
-		#l_r_container #l_r_content #close_l_r{
-			width: 100%;
-			display: block;
-			text-align: right;
-			padding: 10px;
-			cursor: pointer;
-		}
-		#l_r_container #l_r_content #login_container, #l_r_container #l_r_content #register_container{
-			float: left;
-			width: 50%;
-			margin-top: 10px;
-			padding: 10px;
-			height: auto;
-			overflow: hidden;
-		}
+				#l_r_content label input{
+					position: absolute;
+					top:0;
+					left:120px;
+					display: line-block;
+				}
+			#l_r_content button{
+				display: line-block;
+				margin-left: 10px;
+			}
+			#l_r_content #login_container, #l_r_content #register_container{
+				float: left;
+				width: 50%;
+				margin-top: 10px;
+				padding: 10px;
+				height: auto;
+				overflow: hidden;
+			}
 
-		#l_r_container #l_r_content #register_container{
-			border-left:1px solid black;
-		}
+			#l_r_content #register_container{
+				border-left:1px solid black;
+			}
 
 /*Media Queries*/
 @media screen and (min-width:1111px){
@@ -619,6 +779,9 @@ body{
 	#main_container{
 		width: 100%;
 	}
+	header{
+		position: relative;
+	}
 	#nav{
 		position: absolute;
 		left: 10px;
@@ -630,7 +793,6 @@ body{
 		border-top-right-radius: 5px;
 		border-bottom-left-radius: 5px;
 		overflow: hidden;
-		z-index: 1000;
 	}
 	#nav li{
 		position: relative;
@@ -668,6 +830,9 @@ body{
 	#main_container{
 		width: 100%;
 	}
+	header{
+		position: relative;
+	}
 	#nav{
 		position: absolute;
 		left: 10px;
@@ -679,7 +844,6 @@ body{
 		border-top-right-radius: 5px;
 		border-bottom-left-radius: 5px;
 		overflow: hidden;
-		z-index: 1000;
 	}
 	#nav li{
 		position: relative;
@@ -696,6 +860,11 @@ body{
 		margin-bottom: 10px;
 		cursor: pointer;
 	}
+
+	#content_container #events_list li section .time_to{
+		font-size: 20px;
+	}
+
 
 }
 
@@ -716,9 +885,11 @@ body{
 	}
 
 	#main_container{
-		width: 480px;
+		min-width: 480px;
 	}
-
+	header{
+		position: relative;
+	}
 	#nav{
 		position: absolute;
 		left: 10px;
@@ -730,7 +901,6 @@ body{
 		border-top-right-radius: 5px;
 		border-bottom-left-radius: 5px;
 		overflow: hidden;
-		z-index: 1000;
 	}
 	#nav li{
 		position: relative;
@@ -750,5 +920,27 @@ body{
 	#contact_container #contact form{
 		width:450px;
 		margin: 0 0 0 -10px;
+	}
+	#content_container #main #fields li{
+		height: 200px;
+	}
+	#content_container #main #fields li section{
+		height: 196px;
+	}
+	#content_container #main #fields li section{
+		height: 196px;
+	}
+	#content_container #main #fields li section .f_company_info{
+		display: block;
+		margin: 100px;
+		width: 200px;
+		height: auto;
+		background: transparent;
+	}
+		#content_container #main #fields li section .f_filter_icons img{
+			display: inline-block;
+		}
+	#content_container #events_list li section .time_to{
+		font-size: 18px;
 	}
 }

@@ -1,4 +1,4 @@
-</section>
+				</section>
 				<footer>
 					<h3>copyright 2014 &copy Paintball Buddy</h3>
 					<ul class="social_media social_footer">

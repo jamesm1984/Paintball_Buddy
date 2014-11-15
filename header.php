@@ -1,7 +1,7 @@
 <?php
 	//Start the Session
-	session_start();
-	require('connect.php');
+	// session_start();
+	// require('connect.php');
 ?>
 <!DOCTYPE HTML>
 <html>
@@ -12,7 +12,9 @@
 		<meta charset="utf-8">
 		<meta description="Paintball Buddy a tool for paintballers by paintballers">
 		<link rel="stylesheet" type="text/css" href="CSS/Style.css">
+		<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.js"></script>
 		<script type="text/javascript" src="JS/function.js"></script>
+
     <script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script>
     <script>
 var map;
@@ -70,7 +72,7 @@ google.maps.event.addDomListener(window, 'load', initialize);
 							}else{
 
 								//3.2 When the user visits the page first time, simple login form will be displayed.
-								echo '<p id="login" onclick="open_l_r()">Login | Register</p>';
+								echo '<p id="login">Login | Register</p>';
 
 							}
 						?>

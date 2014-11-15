@@ -5,7 +5,7 @@ function open_close_menu(){
 
 	if(width_amount >= "70px" || width_amount === ""){
 		menu.width = "120px";
-		menu.height = "355px";
+		menu.height = "295px";
 	} else {
 		menu.width = "70px";
 		menu.height = "70px";
@@ -13,5 +13,16 @@ function open_close_menu(){
 }
 
 function open_l_r(){
-	document.getElementById('l_r_container').style.display = "block";
+
 }
+
+$(document).ready(function() {
+
+	$('#l_r_container').click(function() {
+		$('#l_r_container').hide();
+	});
+
+	$('#login').click(function() {
+		$('#l_r_container').show();
+	});
+});

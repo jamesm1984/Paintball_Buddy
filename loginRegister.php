@@ -1,9 +1,8 @@
 <section id="l_r_container">
 	<section id="l_r_content_border">
 		<section id="l_r_content">
-			<p id="close_l_r" onclick="close_l_r()">X</p>
 			<div id="login_container">
-				<form name="form1" method="post" action="connect.php">
+				<form name="form1"><!--  method="post" action="connect.php" -->
 					<h2>Login</h2>
 					<label>Email: <input name="email" type="text"></label>
 					<label>Password: <input name="password" type="text"></label>
@@ -22,4 +21,4 @@
 			</div>
 		</section>
 	</section>
-<section>
+</section>
